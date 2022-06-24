@@ -1,0 +1,41 @@
+DecommentDFA
+
+NORMAL (accept) <-- the start state
+   /:  MAYBE_COMMENT
+   ':  IN_CHAR
+   ":  IN_STRING
+   other:  NORMAL
+
+MAYBE_COMMENT (accept) 
+   *:  IN_COMMENT
+   /:  MAYBE_COMMENT
+   ':  IN_CHAR
+   ":  IN_STRING
+   other:  NORMAL
+
+IN_COMMENT (reject)
+   *:  MAYBE_NORMAL
+   \n: IN_COMMENT
+   other:  IN_COMMENT
+
+MAYBE_NORMAL (reject)
+   /:  NORMAL
+   *:  MAYBE_NORMAL
+   \n: IN_COMMENT
+   other:  IN_COMMENT
+
+IN_CHAR (accept)
+   ':  NORMAL
+   \:  CHAR_ESCAPE
+   other:  IN_CHAR
+
+CHAR_ESCAPE (accept)
+   all:  IN_CHAR
+
+IN_STRING (accept)
+   ":  NORMAL
+   \:  STRING_ESCAPE
+   other:  IN_STRING
+
+STRING_ESCAPE (accept)
+   all:  IN_STRING
