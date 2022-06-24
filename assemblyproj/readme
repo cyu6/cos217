@@ -1,0 +1,145 @@
+Assignment 4 readme File
+
+------------------------------------------------------------------------
+What is your name?
+
+Catherine Yu
+
+------------------------------------------------------------------------
+What authorized sources of information did you use to complete
+the assignment? COPY THE LIST of authorized sources of information
+given in the "Policies" web page to this section of the readme file,
+and edit it as appropriate.
+
+The course's lectures.
+
+The course's precepts.
+
+The course's website.
+
+Documents that are referenced directly by the course's website. 
+
+The course's textbooks.
+
+The course's current staff members outside of class time through Piazza.
+
+------------------------------------------------------------------------
+What unauthorized sources of information did you use to complete the
+assignment? List any unauthorized sources of information that you used
+to complete the assignment, and describe how you used them. The course
+"Policies" web page defines unauthorized sources of information, and
+any source that you have used but not listed in the authorized sources
+should be included here. Please note that using an unauthorized source
+may trigger a course penalty, and depending on the nature of the
+interaction, may additionally require the interaction being reported
+to the Committee on Discipline. Write "None" if you used no
+unauthorized sources of information.
+
+None
+
+------------------------------------------------------------------------
+What is your assessment of the assignment? Was it helpful? Was it fun?
+
+It was kind of fun to code in assembly but in the end I felt it was more
+tedious than fun because it was so easy to mess up and it would take a
+long time to look for the errors.
+
+------------------------------------------------------------------------
+(optional) What information can you provide about your submission that
+will help your grader to grade it in the most favorable light? In
+particular, what bugs are in your submission?
+
+None known bugs.
+
+------------------------------------------------------------------------
+What is your mywc program test plan?
+
+Boundary tests:
+mywcemptyfile.txt: This file does not contain anything, which tests the
+code's ability to recognize EOF.
+
+mywcchars1.txt: This file only contains characters, no whitespace.
+
+mywcchars2.txt: This file contains all characters and ends with spaces.
+
+mywcchars3.txt: This file contains all characters and ends with a new
+line.
+
+mywclines1.txt: This file only contains new line characters.
+
+mywclines2.txt: This file contains new lines and ends with characters.
+
+mywclines3.txt: This file contains new lines and ends with a space.
+
+mywclines4.txt: This file contains new lines with characters in the
+middle and no spaces.
+
+mywclines5.txt: This file contains new lines with spaces in the middle
+and no non-whitespace characters.
+
+mywcspaces1.txt: This file contains all spaces.
+
+mywcspaces2.txt: This file contains all spaces and ends with one
+(non-whitespace) character.
+
+mywcspaces3.txt: This file contains all spaces and ends with a new line
+character.
+
+mywcspaces4.txt: This file contains spaces with characters in the
+middle and no new lines.
+
+mywcspaces5.txt: This file contains spaces with new lines in the
+middle and no non-whitespace characters.
+
+mywcwords1.txt: This file contains one line of words (no new lines).
+
+mywcwords2.txt: This file contains lines of words (no spaces).
+
+mywcshort*.txt: These three files contain small inputs.
+
+mywclong*.txt: These two files contain larger inputs.
+
+Statement tests:
+mywcendchar.txt: This file contains a few lines, of which the last char-
+acter in the file is not white space. This tests lines 34, 36, 38, 39,
+44, 45, 48, 49, 52, and 53.
+
+mywcendnewline.txt: This file contains a few lines, of which the last
+character in the file is a new line character. This tests lines 34, 36,
+38, 39, 44, 45, 48, 49, and 52.
+
+mywcendspace.txt: This file contains a few lines, of which the last cha-
+racter in the file is a space character. This tests lines 34, 36, 38, 39
+44, 45, 48, 49, and 52. 
+
+mywcproverb.txt: This file contains the example given on the assignment
+page. This tests all the lines of the given mywc.c.
+
+Stress tests:
+
+mywcstress1.txt: This file contains 30,000 random characters (only ASCII
+printable characters) generated using the rand() function.
+
+mywcstress2.txt: This file contains 40,000 random characters similar to
+stress1 (generated using rand(), only ASCII).
+
+mywcstress3.txt: This file contains 50,000 random characters similar to
+stress1 and stress2.
+
+------------------------------------------------------------------------
+What are the CPU times consumed by the programs from Parts 2a, 2b, 2d,
+2e, and 2f to compute fib(250000)? Fill in the blanks.
+
+Part 2a:  11.95 seconds
+
+Part 2b:   2.99 seconds
+
+Part 2d:  10.36 seconds
+
+Part 2e:   5.39 seconds
+
+Part 2f:   2.17 seconds
+
+
+
+

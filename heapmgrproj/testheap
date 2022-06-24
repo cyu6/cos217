@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+########################################################################
+# testheap
+# Author: Bob Dondero
+########################################################################
+
+# Perform timing tests of HeapMgr implementations.
+
+echo "      Executable         Test   Count   Size   Time        Mem"
+./testheapimp ./test1
+./testheapimp ./test2
+./testheapimp ./test3
+./testheapimp ./test4
+./testheapimp ./test5

@@ -1,0 +1,46 @@
+#---------------------------------------------------------------------
+# Makefile
+# Author: Catherine Yu
+#---------------------------------------------------------------------
+
+# Macros
+CC = gcc217
+# CC = gcc217m
+
+# Dependency rules for non-file targets
+all: ishlex ishsyn ish
+clobber: clean
+	rm -f *~ \#*\#
+clean:
+	rm -f ishlex ishsyn ish *.o
+
+# Dependency rules for file targets
+ishlex: ishlex.o token.o lexanalysis.o dynarray.o
+	$(CC) -g ishlex.o token.o lexanalysis.o dynarray.o -o ishlex
+ishsyn: ishsyn.o command.o synanalysis.o dynarray.o token.o lexanalysis.o
+	$(CC) -g ishsyn.o command.o synanalysis.o dynarray.o token.o \
+lexanalysis.o -o ishsyn
+ish: ish.o token.o lexanalysis.o synanalysis.o dynarray.o command.o execution.o
+	$(CC) -g ish.o token.o lexanalysis.o synanalysis.o dynarray.o command.o execution.o -o ish
+
+dynarray.o: dynarray.c dynarray.h
+	$(CC) -g -c dynarray.c
+
+ishlex.o: ishlex.c dynarray.h token.h lexanalysis.h
+	$(CC) -g -c ishlex.c
+token.o: token.c token.h dynarray.h
+	$(CC) -g -c token.c
+lexanalysis.o: lexanalysis.c lexanalysis.h dynarray.h token.h
+	$(CC) -g -c lexanalysis.c
+
+ishsyn.o: ishsyn.c dynarray.h token.h synanalysis.h command.h lexanalysis.h
+	$(CC) -g -c ishsyn.c
+command.o: command.c dynarray.h token.h
+	$(CC) -g -c command.c
+synanalysis.o: synanalysis.c synanalysis.h dynarray.h token.h command.h
+	$(CC) -g -c synanalysis.c
+
+ish.o: ish.c execution.h token.h lexanalysis.h synanalysis.h command.h dynarray.h
+	$(CC) -g -c ish.c
+execution.o: execution.c execution.h command.h dynarray.h
+	$(CC) -g -c execution.c

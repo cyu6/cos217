@@ -1,0 +1,40 @@
+Electronic Communication
+These are the course's policies concerning electronic communication:
+
+If you have a question that you can express without revealing any of yo
+ur assignment solution, then you may post it to the course's Piazza acc
+ount. One of the course's instructors will respond as soon as possible.
+Other students also are welcome to respond if and only if they can do so
+without revealing any of their assignment solutions.
+
+If you have a question that you cannot express without revealing any of
+your assignment solution, then you may not post it to Piazza. Instead
+you may e-mail it to your preceptor. See the course's General Informati
+on web page for the e-mail address of your preceptor.
+
+If your preceptor does not answer your e-mailed question in a reasonable
+amount of time, then you may e-mail your question to all of the course's
+instructors at cos217instructors@lists.cs.princeton.edu. Any e-mail sent
+to that address will be received only by the course's preceptors, not by
+students. One of the course's preceptors will answer your question as so
+on as possible. You may not e-mail questions directly to a preceptor oth
+er than your own.
+
+In the context of electronic communication, the phrase any of your
+assignment solution includes:
+
+The products that you create for the assignment, that is, your source
+code files (including comments), DFA files, Makefiles, readme files,
+etc. You may not show any of the products that you create for the assign
+ment, modified versions of them, or any parts of them, on Piazza.
+
+Descriptions of those products in the form of pseudo-code, flow charts,
+outlines, diagrams, natural language prose, etc. You may not describe
+the products that you create for the assignment, or any parts of them,
+on Piazza.
+
+Design decisions that you make in the process of creating those product
+s, that is, your decisions about how to express your program as files,
+your files as functions, your functions as statements, etc. You may not
+describe your design decisions or suggest design decisions on Piazza.
+
