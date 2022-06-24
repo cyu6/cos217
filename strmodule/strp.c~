@@ -1,0 +1,27 @@
+/*--------------------------------------------------------------------*/
+/* strp.c                                                             */
+/* Author: Catherine Yu                                               */
+/*--------------------------------------------------------------------*/
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <stddef.h>
+
+/*--------------------------------------------------------------------*/
+
+size_t Str_getLength(const char *pcSrc)
+{
+   const char *pcEnd;
+   assert(pcSrc != NULL);
+   pcEnd = pcSrc;
+   while (*pcEnd != '\0')
+      pcEnd++;
+   return (size_t)(pcEnd - pcSrc);
+}
+
+/*--------------------------------------------------------------------*/
+
+char *Str_copy(char *s1, const char *s2)
+{
+   
+}

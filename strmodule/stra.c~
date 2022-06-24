@@ -1,0 +1,15 @@
+/*--------------------------------------------------------------------*/
+/* stra.c                                                             */
+/* Author: Catherine Yu                                               */
+/*--------------------------------------------------------------------*/
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <stddef.h>
+
+size_t Str_getLength(const char str[])
+{
+   size_t length = 0;
+   assert(str != NULL);
+   while
+}
